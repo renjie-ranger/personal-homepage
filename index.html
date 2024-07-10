@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luo Renjie - Personal Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77d5d4 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: #77d5d4;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #showcase h1 {
+            font-size: 55px;
+            margin-top: 0;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: #333;
+        }
+
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border: #ddd 1px solid;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav ul {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+
+            header nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 0;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Luo Renjie</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My Personal Homepage</h1>
+            <p>Discover my projects, publications, and experiences in the field of Artificial Intelligence.</p>
+        </div>
+    </section>
+
+    <div class="container content">
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>Beihang University</h3>
+                    <p>Bachelor of Engineering - Artificial Intelligence; GPA: 3.65/4.0 (Sep 2019 - Jun 2024)</p>
+                    <p>Languages: Chinese (native), English (fluent, IELTS total score 7.5/9), Japanese (intermediate), Cantonese (advanced)</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>HerculesBench: Gradual Steps Towards AGI with a Bilingual Multi-discipline Hierarchical and Multimodal Benchmark.(Under-Review)</li>
+                <li>OlympiadBench: A Challenging Benchmark for Promoting AGI with Olympiad-Level Bilingual Multimodal Scientific Problems (ACL-2024 Accepted). <a href="https://arxiv.org/pdf/2402.14008.pdf">[Arxiv Link]</a></li>
+                <li>UltraEval: A Lightweight Platform for Flexible and Comprehensive Evaluation for LLMs (ACL-2024-Demo Accepted). <a href="https://arxiv.org/pdf/2404.07584.pdf">[Arxiv Link]</a></li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Hierarchical Benchmark</h3>
+                    <p>Proposed the idea as a co-first author, led the data collection, processing, and cleaning for the project, conducted a significant portion of the experiments, and contributed to nearly half of the manuscript writing.</p>
+                </li>
+                <li>
+                    <h3>LEGENT (Embodied Agents Platform)</h3>
+                    <p>Led the realism rendering for LEGENT, researching and deploying ControlNet for high-fidelity visual simulations in 3D environments. <a href="https://github.com/thunlp/LEGENT">View on GitHub</a></p>
+                </li>
+                <li>
+                    <h3>Olympiad-level Benchmark</h3>
+                    <p>Led topic research, data investigation, collection, cleaning, and annotation strategy for the OlympiadBench project...</p>
+                </li>
+                <li>
+                    <h3>LLM Automated Evaluation Framework</h3>
+                    <p>An automated evaluation framework for large language models, multi-dimensional, with user-friendly and highly customizable evaluation strategies...</p>
+                </li>
+                <li>
+                    <h3>Multi-GPU evaluation acceleration framework</h3>
+                    <p>Python code implementation for evaluation acceleration built with Gunicorn and Flask...</p>
+                </li>
+                <li>
+                    <h3>Multimodal Open-domain Dialog Systems Evaluation Benchmark Design</h3>
+                    <p>Research oriented, open source, the first benchmark framework in the field...</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <h3>Natural Language Processing Lab at Tsinghua University (THUNLP)</h3>
+                    <p>Full-time Research Intern (Dec 2023 - Present)</p>
+                    <p>Constructed a super hard benchmark by collecting Olympiad contest questions...</p>
+                </li>
+                <li>
+                    <h3>ModelBest Inc.</h3>
+                    <p>Full-time internship (Jun 2023 - Dec 2023)</p>
+                    <p>Led the assessment of large language models...</p>
+                </li>
+                <li>
+                    <h3>Beijing Institute for General Artificial Intelligence</h3>
+                    <p>Part-time internship (Nov 2021 - Feb 2022)</p>
+                    <p>Gained a foundational understanding of the scientific research workflow...</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Luo Renjie. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
